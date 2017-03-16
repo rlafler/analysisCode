@@ -109,7 +109,11 @@ function [offsetV, rmsV, rmsI] = chooseOffAndRMS_143mV(bShaped,type,date)
            elseif strcmp(date,'3-14-17_pre_Co60')
                 rmsV = 0.00026; 
                 offsetV = -0.0387;
-                rmsI = 0.0531;                 
+                rmsI = 0.0531;
+           elseif strcmp(date,'3-14-17_post_Co60')
+                rmsV = 0.00024; 
+                offsetV = -0.0384;
+                rmsI = 0.0524;                 
            end
        end
     else %%shaped
@@ -188,7 +192,10 @@ function [offsetV, rmsV, rmsI] = chooseOffAndRMS_143mV(bShaped,type,date)
                 offsetV = -0.0012;
             elseif strcmp(date,'3-14-17_pre_Co60')
                 rmsV = 0.00040;
-                offsetV = -0.0012;                
+                offsetV = -0.0012;  
+            elseif strcmp(date,'3-14-17_post_Co60')
+                rmsV = 0.00040;
+                offsetV = -0.0010;                
             end
         elseif strcmp(type,'Co60')
             if strcmp(date,'9-20-16')
